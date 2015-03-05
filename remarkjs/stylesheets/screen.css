@@ -142,25 +142,52 @@ th, td {
 pre {
   margin: auto;
   width: 95%;
+  -webkit-box-shadow: #2a333e 2px 2px 10px;
+  -moz-box-shadow: #2a333e 2px 2px 10px;
+  box-shadow: #2a333e 2px 2px 10px;
 }
 
-/* line 89, ../sass/screen.scss */
+/* line 91, ../sass/screen.scss */
+ol li {
+  list-style: decimal;
+  margin-left: 2em;
+}
+/* line 95, ../sass/screen.scss */
+ol li li {
+  list-style: lower-alpha;
+}
+/* line 98, ../sass/screen.scss */
+ol li li li {
+  list-style: lower-roman;
+}
+/* line 104, ../sass/screen.scss */
+ol li ul li {
+  list-style: disc;
+}
+
+/* line 112, ../sass/screen.scss */
+ul li {
+  list-style: disc;
+  margin-left: 2em;
+}
+
+/* line 118, ../sass/screen.scss */
 tr:nth-child(even) {
   background-color: #a1aca9;
 }
 
-/* line 93, ../sass/screen.scss */
+/* line 122, ../sass/screen.scss */
 tr:nth-child(odd) {
   background-color: #798c87;
 }
 
-/* line 97, ../sass/screen.scss */
+/* line 126, ../sass/screen.scss */
 th {
   background-color: #283e38;
   font-weight: 700;
 }
 
-/* line 102, ../sass/screen.scss */
+/* line 131, ../sass/screen.scss */
 td:nth-child(n+2) {
   border-left: #5b746d solid 2pt;
 }

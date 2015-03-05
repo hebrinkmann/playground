@@ -84,6 +84,35 @@ th, td {
 pre {
 	margin: auto;
 	width: 95%;
+	@include box-shadow($color-secondary-1-4 2px 2px 10px);
+}
+
+ol {
+	li {
+		list-style: decimal;
+		margin-left: 2em;
+
+		li {
+			list-style: lower-alpha;
+
+			li {
+				list-style: lower-roman;
+			}
+		}
+
+		ul {
+			li {
+				list-style: disc;
+			}
+		}
+	}
+}
+
+ul {
+	li {
+		list-style: disc;
+		margin-left: 2em;
+	}
 }
 
 tr:nth-child(even) {
